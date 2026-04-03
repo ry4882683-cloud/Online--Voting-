@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Result</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="showResult()">
+
+<div class="container">
+  <h2>📊 Results</h2>
+
+  <p>A.  Rahul Kumar Yadav: <span id="a"></span></p>
+  <p>B.  Ritik Singh: <span id="b"></span></p>
+
+  <button onclick="reset()">Reset</button>
+</div>
+
+<script>
+function showResult() {
+  document.getElementById("a").innerText = localStorage.getItem("A") || 0;
+  document.getElementById("b").innerText = localStorage.getItem("B") || 0;
+}
+
+function reset() {
+  localStorage.clear();
+  window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>

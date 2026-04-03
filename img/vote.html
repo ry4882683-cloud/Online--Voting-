@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vote</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>🗳 Choose Candidate</h2>
+
+  <!-- Candidate A -->
+  <div>
+    <h3>A. Rahul Kumar</h3>
+    <img src="img/Rahul kumar yadav A.jpeg" width="120">
+    <br>
+    <button class="vote-a" onclick="vote('A')">Vote</button>
+  </div>
+
+  <br>
+
+  <!-- Candidate B -->
+  <div>
+    <h3>B. Ritik Singh</h3>
+    <img src="img/Ritik singh B.jpeg" width="120">
+    <br>
+    <button class="vote-b" onclick="vote('B')">Vote</button>
+  </div>
+
+</div>
+
+<script>
+function vote(c) {
+  if(localStorage.getItem("voted")) {
+    alert("Already voted!");
+  } else {
+    let count = localStorage.getItem(c) || 0;
+    localStorage.setItem(c, ++count);
+    localStorage.setItem("voted", true);
+    window.location.href = "result.html";
+  }
+}
+</script>
+
+</body>
+</html>
