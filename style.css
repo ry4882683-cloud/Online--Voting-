@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  text-align: center;
+  color: white;
+}
+
+.container {
+  background: white;
+  color: black;
+  padding: 30px;
+  margin: 80px auto;
+  width: 350px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+input {
+  width: 90%;
+  padding: 12px;
+  margin: 10px;
+  border-radius: 8px;
+  border: 1px solid gray;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  margin: 10px 0;
+  
+  background-color: blue;
+}
+
+
+
+.login-btn {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+}
+
+.vote-a {
+  background: rgb(14, 211, 7);
+}
+
+.vote-b {
+  background: rgb(234, 152, 10);
+}
+
+img {
+  border-radius: 50%;
+  margin: 10px 0;
+}
+
+.bar {
+  height: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.green {
+  background: green;
+}
+
+.orange {
+  background: orange;
+}
+
+.login-btn {
+  background-color: blue;
+}
